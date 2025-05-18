@@ -1,8 +1,8 @@
 [build]
-  base = "frontend/chat-app"  # Path to the frontend directory
-  publish = "frontend/chat-app/build"  # Path to the build folder in frontend
-  command = "npm run build"  # Command to run the build process
+  base = "frontend/chat-app"  # Path to frontend directory
+  publish = "build"           # Path to build folder inside the frontend
+  command = "npm run build"   # Build command
 
 [build.environment]
-  NODE_ENV = "production"  # Make sure to set the correct Node environment
-  CI = "false"  # Disable CI flag to avoid treating warnings as errors
+  NODE_ENV = "production"
+  CI = "false"                # Set CI to false to avoid warnings as errors
