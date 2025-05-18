@@ -11,8 +11,7 @@ require("dotenv").config();
 
 // CORS configuration
 const allowedOrigins = [
-//   "https://your-netlify-site-url.netlify.app",  // Replace with your Netlify URL
-  "https://chatappm.netlify.app/",
+  "https://chatappm.netlify.app",  // Your actual Netlify URL
   "http://localhost:3000",  // Allow localhost for development
 ];
 
@@ -55,7 +54,7 @@ const server = app.listen(process.env.PORT, () => {
 // Socket.IO CORS configuration
 const io = socket(server, {
   cors: {
-    origin: ["http://localhost:3000", "https://your-netlify-site-url.netlify.app"],  // Replace with your Netlify URL
+    origin: ["http://localhost:3000", "https://chatappm.netlify.app"],  // Correct Netlify URL
     credentials: true,
   },
 });
