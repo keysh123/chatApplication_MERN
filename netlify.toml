@@ -1,0 +1,8 @@
+[build]
+  base = "frontend/chat-app"  # Path to the frontend directory
+  publish = "frontend/chat-app/build"  # Path to the build folder in frontend
+  command = "npm run build"  # Command to run the build process
+
+[build.environment]
+  NODE_ENV = "production"  # Make sure to set the correct Node environment
+
