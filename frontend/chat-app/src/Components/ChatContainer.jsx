@@ -180,7 +180,7 @@ export default function ChatContainer({ currentChat, currentUser ,socket}) {
       })
     }
 
-  },[])
+  },[socket])
 
   useEffect(()=>{
     arrivalMessage && setMessages((prev)=>
