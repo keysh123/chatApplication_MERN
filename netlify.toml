@@ -5,6 +5,4 @@
 
 [build.environment]
   NODE_ENV = "production"  # Make sure to set the correct Node environment
-  CI = "false"
-
-
+  CI = "false"  # Disable CI flag to avoid treating warnings as errors
